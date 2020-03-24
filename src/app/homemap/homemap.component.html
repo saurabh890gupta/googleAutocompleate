@@ -1,0 +1,12 @@
+
+
+
+
+<input #search autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control">
+
+<p>lattitude:  {{latitude}}</p>
+<p>lattitude:  {{longitude}}</p>
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+  <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+   ></agm-marker>
+</agm-map>
